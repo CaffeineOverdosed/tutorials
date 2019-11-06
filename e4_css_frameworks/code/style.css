@@ -1,0 +1,109 @@
+/* 背景颜色，鸡和鸡蛋 */
+.hero-body {
+  background: url(/img/BG1.png) no-repeat center left;
+}
+.hero.is-gentleman {
+  background-color: #fbd95b;
+}
+.hero-body .container {
+  position: relative;
+}
+.hero-body .container img {
+  position: absolute;
+  right: 2%;
+  top: 55%;
+}
+
+/* 导航栏样式 */
+a.navbar-item {
+  font-family: "Montserrat";
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-right: 1rem;
+}
+a.navbar-item:hover {
+  background-color: transparent;
+  color: #0081ff;
+}
+.navbar-item.logo {
+  font-size: 2.6rem;
+  letter-spacing: 2px;
+}
+.navbar-item.phone_number span {
+  margin-left: 1rem;
+  font-size: 2.2rem;
+}
+
+/* 导航栏字体，中间主体字体 */
+.navbar-item.phone_number, 
+.navbar-item.logo,
+.hero-body .container .title,
+.hero-body .container .subtitle {
+  font-family: "Bangers";
+}
+
+/* 中间主体字体大小 */
+.title.is-404 {
+  font-size: 10rem;
+}
+
+/* 第三行文字font */
+.hero-body .container p {
+  font-family: "Open Sans";
+}
+
+/* 主页按钮 */
+.button.is-homepage {
+  font-size: 1rem;
+  height: auto;
+  padding: 1rem 2.5rem;
+  text-transform: uppercase;
+  background-color: #0081ff;
+  color: #fff;
+  border-radius: 3rem;
+  font-weight: 700;
+  box-shadow: 0rem 0.5rem 1rem rgba(0, 112, 222, 0.7);
+  border: none;
+  transition: all 0.3s ease;
+}
+.button.is-homepage:hover {
+  transform: translateY(-2px);
+  box-shadow: 0rem 0.7rem 1.2rem rgba(0, 112, 222, 0.6);
+}
+
+/* 页脚图标样式 */
+.tabs ul {
+  justify-content: center;
+}
+.tabs.is-fullwidth li {
+  flex-grow: 0;
+}
+.hero-foot li {
+  font-size: 1.6rem;
+  transition: all 0.3s ease;
+}
+.hero-foot li:hover {
+  opacity: 0.5;
+}
+
+/* 整体字体颜色 */
+body, .title, .subtitle,
+.navbar-item, .navbar-link {
+  color: #1A1B1C;
+}
+
+/* 间距 */
+.mt-3 {
+  margin-top: 3rem;
+}
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+/* 去掉边上滚动条 */
+::-webkit-scrollbar { 
+  display: none; 
+}
+@-moz-document url-prefix() {
+  html,body{overflow: hidden !important;}
+}
