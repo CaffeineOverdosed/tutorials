@@ -1,0 +1,117 @@
+/* 页面基本样式 */
+
+body {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    background: #fff;
+}
+
+.container .content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+h1 {
+    font-size: 4rem;
+    margin: 0;
+    color: #3e3e3e;
+}
+
+
+/* 按钮样式，从codepen上偷的233 */
+
+
+/* code copied from https://codepen.io/Kremlin/pen/rGQjRG */
+
+.button {
+    border: 5px solid #3e3e3e;
+    color: #3e3e3e;
+    padding: 10px;
+    width: 100px;
+    margin: 20px auto;
+    text-align: center;
+    position: relative;
+    font-size: 1.7rem;
+}
+
+.button:hover {
+    cursor: pointer;
+    padding: 15px;
+    font-size: 2rem;
+    transition: all ease .3s;
+}
+
+.button:hover span:after {
+    padding: 15px;
+    transition: all ease .3s;
+    animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+}
+
+.button:hover span:before {
+    padding: 15px;
+    animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+}
+
+.button:active {
+    padding: 12px;
+    font-size: 1.7rem;
+    transition: all ease .3s;
+}
+
+.button:active span:after {
+    padding: 12px;
+    transition: all ease .3s;
+}
+
+.button:active span:before {
+    padding: 12px;
+    transition: all ease .3s;
+}
+
+span:after,
+span:before {
+    padding: 10px;
+    width: 100px;
+    content: "吃啥";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    opacity: .7;
+}
+
+span:before {
+    border: 5px solid #00CEFF;
+    z-index: -5;
+    color: #00CEFF;
+}
+
+span:after {
+    border: 5px solid #F75967;
+    z-index: -5;
+    color: #F75967;
+}
+
+@keyframes glitch {
+    0% {
+        transform: translate(0);
+    }
+    20% {
+        transform: translate(-3px, 3px);
+    }
+    40% {
+        transform: translate(-3px, -3px);
+    }
+    60% {
+        transform: translate(3px, 3px);
+    }
+    80% {
+        transform: translate(3px, -3px);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
